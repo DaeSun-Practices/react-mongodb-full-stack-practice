@@ -1,1 +1,1 @@
-# react-full-stack-project
+# react-full-stack-practice
