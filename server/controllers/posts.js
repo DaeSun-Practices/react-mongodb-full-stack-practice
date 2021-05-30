@@ -14,7 +14,7 @@ export const getPosts = async (request, response) =>{
 }
 
 export const createPost = async (request, response) =>{
-    const body = request.body;
+    const post = request.body;
 
     const newPost = new PostMessage(post);
 
