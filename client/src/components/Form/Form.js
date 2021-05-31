@@ -28,6 +28,7 @@ const Form = () => {
         <Paper className={classes.paper}>
             <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
                 <Typography variant="h6"> Creating a Memory </Typography>
+
                 <TextField 
                     name="creator" 
                     variant="outlined" 
@@ -68,7 +69,7 @@ const Form = () => {
                     <FileBase
                         type="file"
                         multiple={false}
-                        onDone={({base64}) => setPostData({ ...postData, base64})}
+                        onDone={({base64}) => setPostData({ ...postData, selectedFile: base64})}
                     />
                 </div>
 
